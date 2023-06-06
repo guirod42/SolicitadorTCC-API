@@ -1,0 +1,12 @@
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\bin\Debug\net6.0\SolicitadorTCC.Domain.deps.json
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\bin\Debug\net6.0\SolicitadorTCC.Domain.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\bin\Debug\net6.0\SolicitadorTCC.Domain.pdb
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.csproj.AssemblyReference.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.AssemblyInfoInputs.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.AssemblyInfo.cs
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.csproj.CoreCompileInputs.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\refint\SolicitadorTCC.Domain.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\SolicitadorTCC.Domain.pdb
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Domain\obj\Debug\net6.0\ref\SolicitadorTCC.Domain.dll

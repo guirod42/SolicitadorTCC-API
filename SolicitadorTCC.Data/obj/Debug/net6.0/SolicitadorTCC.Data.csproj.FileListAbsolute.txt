@@ -1,0 +1,15 @@
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.csproj.AssemblyReference.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.AssemblyInfoInputs.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.AssemblyInfo.cs
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.csproj.CoreCompileInputs.cache
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\bin\Debug\net6.0\SolicitadorTCC.Data.deps.json
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\bin\Debug\net6.0\SolicitadorTCC.Data.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\bin\Debug\net6.0\SolicitadorTCC.Data.pdb
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\bin\Debug\net6.0\SolicitadorTCC.Domain.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\bin\Debug\net6.0\SolicitadorTCC.Domain.pdb
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.csproj.CopyComplete
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\refint\SolicitadorTCC.Data.dll
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\SolicitadorTCC.Data.pdb
+D:\GITHUB\SolicitadorTCC.API\SolicitadorTCC.Data\obj\Debug\net6.0\ref\SolicitadorTCC.Data.dll

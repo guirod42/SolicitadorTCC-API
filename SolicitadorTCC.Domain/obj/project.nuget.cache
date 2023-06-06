@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IEGelrezN4E8DbnAWlvUuYiV6EZDvzxdwL7nu9XMwDhCDpqyLOawZDN0anh4Rf1tU2n1cYe45eCM/rOwEl/eug==",
+  "success": true,
+  "projectFilePath": "D:\\GITHUB\\SolicitadorTCC.API\\SolicitadorTCC.Domain\\SolicitadorTCC.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guisi\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}
