@@ -20,24 +20,27 @@ namespace SolicitadorTCC.API.Controllers
             _mapper = mapper;           
         }
 
-        [HttpGet(Name = "BuscarPorId")]
-        public IActionResult Get(int id)
-        {
-
-            return Ok(new PessoaViewModel());
-        }
+        [Route("Cadastrar")]
         // /pessoa/cadastrar
-        [HttpPost(Name = "Cadastrar")]
+        [HttpPost]
         public IActionResult Post(PessoaCreateViewModel pessoaCreateViewModel)
         {
             _pessoaRepository.Cadastrar(_mapper.Map<Pessoa>(pessoaCreateViewModel));
             return Ok();
         }
 
-        [HttpPost(Name = "Autenticar")]
+        [Route("BuscarPorId")]
+        [HttpGet]
+        public IActionResult Get(int id)
+        {
+            return Ok(new PessoaViewModel());
+        }
+
+        [Route("Autenticar")]
+        [HttpPost]
         public IActionResult Post(PessoaAutenticacaoViewModel pessoaAutenticacaoViewModel)
         {
-            //verificar no BD etc ]
+            //verificar no BD etc
             //return NotFound();
 
             return Ok();

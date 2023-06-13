@@ -9,6 +9,9 @@ namespace SolicitadorTCC.API.Mapper
         public DomainToApplication()
         {
             CreateMap<Pessoa, PessoaViewModel>();
+            CreateMap<Projeto, ProjetoViewModel>();
+            CreateMap<Solicitacao, SolicitacaoViewModel>();
+            CreateMap<Tarefa, TarefaViewModel>();
         }
     }
 }

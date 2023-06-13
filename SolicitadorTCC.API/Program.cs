@@ -9,9 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<GestaoContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<GestaoPessoaContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<GestaoProjetoContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<GestaoSolicitacaoContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<GestaoTarefaContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddAutoMapper(typeof(DomainToApplication), typeof(ApplicationToDomain));
+
 builder.Services.AddScoped<IPessoaRepository,PessoaRepository>();//new da pessoarepositoy e injeta no controller
+builder.Services.AddScoped<IProjetoRepository, ProjetoRepository>();//new da pessoarepositoy e injeta no controller
+builder.Services.AddScoped<ISolicitacaoRepository, SolicitacaoRepository>();//new da pessoarepositoy e injeta no controller
+builder.Services.AddScoped<ITarefaRepository, TarefaRepository>();//new da pessoarepositoy e injeta no controller
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -31,9 +39,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

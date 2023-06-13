@@ -10,8 +10,8 @@ namespace SolicitadorTCC.Data.Repository
 {
     public class PessoaRepository : IPessoaRepository
     {
-        private readonly GestaoContext _context;
-        public PessoaRepository(GestaoContext context)
+        private readonly GestaoPessoaContext _context;
+        public PessoaRepository(GestaoPessoaContext context)
         {
             _context = context;
         }
@@ -20,9 +20,7 @@ namespace SolicitadorTCC.Data.Repository
             var buscaUsuario = _context.Pessoa.Where(p => p.Usuario == pessoa.Usuario
                                                && p.Senha == pessoa.Senha).FirstOrDefault();
             if (buscaUsuario != null) return new Pessoa(pessoa.Nome, pessoa.Email, pessoa.Usuario, pessoa.Senha, pessoa.TipoPessoa_ID);
-            return _context.Pessoa.Where(p => p.Usuario == pessoa.Usuario
-                && p.Senha == pessoa.Senha).FirstOrDefault();
-
+            return _context.Pessoa.Where(p => p.Usuario == pessoa.Usuario && p.Senha == pessoa.Senha).FirstOrDefault();
             /*public Pessoa(string Nome, string Email, string Usuario, string Senha, EnumTipoPessoa TipoPessoa_ID)*/
         }
 
