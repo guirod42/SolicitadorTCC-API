@@ -17,7 +17,7 @@ namespace SolicitadorTCC.API.Controllers
         public PessoaController(IPessoaRepository pessoaRepository, IMapper mapper)
         {
             _pessoaRepository = pessoaRepository;
-            _mapper = mapper;           
+            _mapper = mapper;
         }
 
         [Route("Cadastrar")]
