@@ -10,8 +10,8 @@ namespace SolicitadorTCC.Data.Repository
 {
     public class TarefaRepository : ITarefaRepository
     {
-        private readonly GestaoTarefaContext _context;
-        public TarefaRepository(GestaoTarefaContext context)
+        private readonly GestaoContext _context;
+        public TarefaRepository(GestaoContext context)
         {
             _context = context;
         }

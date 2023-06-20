@@ -9,7 +9,17 @@ namespace SolicitadorTCC.Domain
 {
     public class Pessoa
     {
-        public Pessoa(string Nome, string Email, string Usuario, string Senha, EnumTipoPessoa TipoPessoa_ID)
+        protected Pessoa()
+        {
+
+        }
+        public Pessoa(string usuario, string senha)
+        {
+            Usuario = usuario;
+            Senha = senha;
+        }
+
+        public Pessoa(string Nome, string Email, string Usuario, string Senha, EnumTipoPessoa TipoPessoa_ID, DateTime dataCadastro)
         {
             this.Nome = Nome;
             this.Email = Email;
@@ -23,9 +33,8 @@ namespace SolicitadorTCC.Domain
         public string Email { get; set; }
         public string Usuario { get; set; }
         public string Senha { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public bool Status { get; set; }
+        public DateTime? DataCadastro { get; set; }
+        public bool? Status { get; set; }
         public EnumTipoPessoa TipoPessoa_ID { get; set; }
-
     }
 }

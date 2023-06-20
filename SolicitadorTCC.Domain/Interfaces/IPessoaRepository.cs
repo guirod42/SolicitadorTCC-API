@@ -9,6 +9,8 @@ namespace SolicitadorTCC.Domain.Interfaces
     public interface IPessoaRepository
     {
         public Pessoa Autenticar(Pessoa pessoa);
-        public Pessoa Cadastrar(Pessoa pessoa);
+        public void Cadastrar(Pessoa pessoa);
+        public void Atualizar(Pessoa pessoa);
+        public Pessoa BuscarPessoaID(int PessoaID);
     }
 }

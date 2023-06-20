@@ -9,16 +9,23 @@ using SolicitadorTCC.Data.Mappings;
 
 namespace SolicitadorTCC.Data
 {
-    public class GestaoTarefaContext : DbContext
+    public class GestaoContext : DbContext
     {
-        public GestaoTarefaContext(DbContextOptions<GestaoTarefaContext> options) : base(options)
+        public GestaoContext(DbContextOptions<GestaoContext> options) : base(options)
         {
 
         }
 
+        public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<Projeto> Projeto { get; set; }
+        public DbSet<Solicitacao> Solicitacao { get; set; }
         public DbSet<Tarefa> Tarefa { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new PessoaMap());
+            modelBuilder.ApplyConfiguration(new ProjetoMap());
+            modelBuilder.ApplyConfiguration(new SolicitacaoMap());
             modelBuilder.ApplyConfiguration(new TarefaMap());
         }
     }

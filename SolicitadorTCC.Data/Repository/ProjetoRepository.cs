@@ -10,8 +10,8 @@ namespace SolicitadorTCC.Data.Repository
 {
     public class ProjetoRepository : IProjetoRepository
     {
-        private readonly GestaoProjetoContext _context;
-        public ProjetoRepository(GestaoProjetoContext context)
+        private readonly GestaoContext _context;
+        public ProjetoRepository(GestaoContext context)
         {
             _context = context;
         }

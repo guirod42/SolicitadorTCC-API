@@ -9,9 +9,10 @@ namespace SolicitadorTCC.API.Mapper
         public ApplicationToDomain()
         {
             CreateMap<PessoaViewModel, Pessoa>()
-                .ConstructUsing(f => new Pessoa(f.Nome, f.Email, f.Usuario, f.Senha, f.TipoPessoa_ID));
-            CreateMap<PessoaCreateViewModel, Pessoa>()
-               .ConstructUsing(f => new Pessoa(f.Nome, f.Email, f.Usuario, f.Senha, f.TipoPessoa_ID));
+                .ConstructUsing(f => new Pessoa(f.Nome, f.Email, f.Usuario, f.Senha, f.TipoPessoa_ID, f.DataCadastro));
+
+            CreateMap<PessoaAutenticacaoViewModel, Pessoa>()
+               .ConstructUsing(f => new Pessoa(f.Usuario, f.Senha));
 
             CreateMap<ProjetoViewModel, Projeto>()
                 .ConstructUsing(f => new Projeto(f.ProjetoID,f.AlunoSolicitante_ID, f.ProfessorOrientador_ID, f.Curso_ID, f.Titulo, f.Descricao, f.DataInicio, f.DataFim, f.DataPrazo, f.Status));

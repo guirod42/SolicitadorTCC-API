@@ -33,16 +33,21 @@ namespace SolicitadorTCC.API.Controllers
         [HttpGet]
         public IActionResult Get(int id)
         {
-            return Ok(new PessoaViewModel());
+            var pesquisa = _mapper.Map<PessoaViewModel>(_pessoaRepository.BuscarPessoaID(id));
+            if (pesquisa == null) return NotFound();
+            return Ok(
+                new
+                {
+                    success = true,
+                    produto = pesquisa
+                }
+                );
         }
 
         [Route("Autenticar")]
         [HttpPost]
         public IActionResult Post(PessoaAutenticacaoViewModel pessoaAutenticacaoViewModel)
         {
-            //verificar no BD etc
-            //return NotFound();
-
             return Ok();
         }
     }

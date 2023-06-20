@@ -10,8 +10,8 @@ namespace SolicitadorTCC.Data.Repository
 {
     public class SolicitacaoRepository : ISolicitacaoRepository
     {
-        private readonly GestaoSolicitacaoContext _context;
-        public SolicitacaoRepository(GestaoSolicitacaoContext context)
+        private readonly GestaoContext _context;
+        public SolicitacaoRepository(GestaoContext context)
         {
             _context = context;
         }
